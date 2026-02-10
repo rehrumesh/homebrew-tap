@@ -5,21 +5,21 @@
 class Cm < Formula
   desc "Container monitor - stream Docker compose logs with a beautiful TUI"
   homepage "https://github.com/rehrumesh/cm"
-  version "1.6.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.6.0/cm_1.6.0_darwin_amd64.tar.gz"
-      sha256 "67b537e1190101d80b753ca949f455272616dfeedc36ff800e5ad06cf8cb6cf8"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.1/cm_1.4.1_darwin_amd64.tar.gz"
+      sha256 "2fd1d5cb1ba3cc1cedbace5f06b388f36849573d871df77035035ef854ecd8e3"
 
       def install
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.6.0/cm_1.6.0_darwin_arm64.tar.gz"
-      sha256 "1d916b2424b0871bea3d5bd4ddd77af323ddfa524387aba86b133f3c95d58aa7"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.1/cm_1.4.1_darwin_arm64.tar.gz"
+      sha256 "306dc00490d1ec37123b525aae2c55a381f2b1c242a5a93620408b94f954a058"
 
       def install
         bin.install "cm"
@@ -29,15 +29,15 @@ class Cm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.6.0/cm_1.6.0_linux_amd64.tar.gz"
-      sha256 "3056bfab6bda6172caa4aba1de11dafc401c236b8ee882582d3168cebf8d5b6a"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.1/cm_1.4.1_linux_amd64.tar.gz"
+      sha256 "b38fbbdf3763d6b73ac0569ad21a52e9817952a3b006517a1906201f95e3c332"
       def install
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.6.0/cm_1.6.0_linux_arm64.tar.gz"
-      sha256 "2bf1291613e2dea41f90e2f1d4f2cf9afcdf73181f91961368430c563766f856"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.1/cm_1.4.1_linux_arm64.tar.gz"
+      sha256 "5fd96ab2e2d4277880fe543b1d72200f487a80895f4a619a29e4fc2c765aeeab"
       def install
         bin.install "cm"
       end
