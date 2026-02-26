@@ -5,23 +5,23 @@
 class Cm < Formula
   desc "Container monitor - stream Docker compose logs with a beautiful TUI"
   homepage "https://github.com/rehrumesh/cm"
-  version "1.4.2"
+  version "1.4.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.2/cm_1.4.2_darwin_amd64.tar.gz"
-      sha256 "e12c083825506a3945a369cca8a0ad95d92b3f221a4be06b39df8bdd80816656"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_darwin_amd64.tar.gz"
+      sha256 "a9b185105e871075111cbb8bf1f63b2b9b8700be2e129c9fb4a2ec32285bf361"
 
-      def install
+      define_method(:install) do
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.2/cm_1.4.2_darwin_arm64.tar.gz"
-      sha256 "c4da5058cf5327a4678cf4cb9e1cc4ee7cb664c0d1d192e5de2d73a89ae88e65"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_darwin_arm64.tar.gz"
+      sha256 "9a827aaa3ad920bb327fbe4c6a055f72783fc5509f95c07462ee90e794f2db73"
 
-      def install
+      define_method(:install) do
         bin.install "cm"
       end
     end
@@ -29,16 +29,16 @@ class Cm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.2/cm_1.4.2_linux_amd64.tar.gz"
-      sha256 "5f5f7446a12d282066c65030b40ff68b2344ecb2834114aafb2791485599d36e"
-      def install
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_linux_amd64.tar.gz"
+      sha256 "21b0d4a3ddbc84c0ffd7a8994995708b8c1403b870152ada9ad95f955da431e8"
+      define_method(:install) do
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.2/cm_1.4.2_linux_arm64.tar.gz"
-      sha256 "9859876dff64bc9e871f42e74d2b63de270610f339b2eea09552bec17a6e2670"
-      def install
+      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_linux_arm64.tar.gz"
+      sha256 "2dc9aee2f8e305f3eca69cacc5ef2bb6870c69d82689809fdff76a4642ab7cb9"
+      define_method(:install) do
         bin.install "cm"
       end
     end
