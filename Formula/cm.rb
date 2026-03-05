@@ -5,21 +5,21 @@
 class Cm < Formula
   desc "Container monitor - stream Docker compose logs with a beautiful TUI"
   homepage "https://github.com/rehrumesh/cm"
-  version "1.4.5"
+  version "1.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_darwin_amd64.tar.gz"
-      sha256 "a9b185105e871075111cbb8bf1f63b2b9b8700be2e129c9fb4a2ec32285bf361"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.6.1/cm_1.6.1_darwin_amd64.tar.gz"
+      sha256 "1f974dab2ab1ab889dd506b40474e752e6ae03f58a5efe5c716f5d7841571e0f"
 
       define_method(:install) do
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_darwin_arm64.tar.gz"
-      sha256 "9a827aaa3ad920bb327fbe4c6a055f72783fc5509f95c07462ee90e794f2db73"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.6.1/cm_1.6.1_darwin_arm64.tar.gz"
+      sha256 "fec580608bf1b5e2c977ca3eb21aa032ca3e7afa3a53ff26161ec681e7c2a781"
 
       define_method(:install) do
         bin.install "cm"
@@ -29,15 +29,15 @@ class Cm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_linux_amd64.tar.gz"
-      sha256 "21b0d4a3ddbc84c0ffd7a8994995708b8c1403b870152ada9ad95f955da431e8"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.6.1/cm_1.6.1_linux_amd64.tar.gz"
+      sha256 "0bfdc7d6c69eb4128bf933f5a9189fe0e8db09b79243e39cae2b66c835ef8437"
       define_method(:install) do
         bin.install "cm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rehrumesh/cm/releases/download/v1.4.5/cm_1.4.5_linux_arm64.tar.gz"
-      sha256 "2dc9aee2f8e305f3eca69cacc5ef2bb6870c69d82689809fdff76a4642ab7cb9"
+      url "https://github.com/rehrumesh/cm/releases/download/v1.6.1/cm_1.6.1_linux_arm64.tar.gz"
+      sha256 "092bcb38122b80a79e0049b37581fce0a7abc7841e208c4af7d6c0a65c70199f"
       define_method(:install) do
         bin.install "cm"
       end
